@@ -32,7 +32,6 @@
 }
 
 .wgs-header-links {
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,6 +43,7 @@
   a {
     padding: 1rem;
     cursor: pointer;
+    color: white;
   }
 }
 
