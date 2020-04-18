@@ -22,8 +22,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
-    - run: npm run deploy
+    - name: Install
+      run: npm ci
+    - name: Build
+      run: npm run build
+    - name: Set Github Config
+      run: |
+        git config user.email "bot@we-changemakers.github.io"
+        git config user.name "Changemakers Bot"
+    - name: Deploy
+      run: npm run deploy
       env:
         CI: true
