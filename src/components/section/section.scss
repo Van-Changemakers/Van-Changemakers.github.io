@@ -1,0 +1,31 @@
+.wgs-section-title {
+  font-size: 3rem;
+}
+
+.wgs-section-horizontal-row {
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  overflow: auto;
+}
+
+.wgs-tile {
+  display: inline-flex;
+  flex-direction: row;
+  width: 384px;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  .wgs-tile-icon {
+    width: 128px;
+    height: 128px;
+  }
+  .wgs-tile-body {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+  }
+}
