@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e19f5c9f.chunk.css",
+    "main.js": "/static/js/main.e92fd1d1.chunk.js",
+    "main.js.map": "/static/js/main.e92fd1d1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4584af55.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4584af55.js.map",
+    "static/js/2.898bd958.chunk.js": "/static/js/2.898bd958.chunk.js",
+    "static/js/2.898bd958.chunk.js.map": "/static/js/2.898bd958.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c248bdfe1a0254cae2c6c5879f46c6fe.js": "/precache-manifest.c248bdfe1a0254cae2c6c5879f46c6fe.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e19f5c9f.chunk.css.map": "/static/css/main.e19f5c9f.chunk.css.map",
+    "static/js/2.898bd958.chunk.js.LICENSE.txt": "/static/js/2.898bd958.chunk.js.LICENSE.txt",
+    "static/media/email_reps.svg": "/static/media/email_reps.9f2a74e3.svg",
+    "static/media/skyline.jpg": "/static/media/skyline.c0286a3a.jpg",
+    "static/media/we_logo_white.png": "/static/media/we_logo_white.2bb7a996.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4584af55.js",
+    "static/js/2.898bd958.chunk.js",
+    "static/css/main.e19f5c9f.chunk.css",
+    "static/js/main.e92fd1d1.chunk.js"
+  ]
+}
