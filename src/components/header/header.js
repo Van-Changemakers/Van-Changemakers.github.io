@@ -11,7 +11,6 @@ export default function Header () {
         <a href="#fundraisers">Fundraisers</a>
         <a href="#resources">Resources</a>
         <a href="#social_media">Social Media</a>
-        <a href="#social_media">Test</a>
       </div>
       <header class="wgs-header" style={{backgroundImage: `linear-gradient(90deg, rgba(24, 174, 232, 0.75), rgba(19, 198, 163, 0.75)), url(${Skyline})`}}>
         <div class="wgs-header-title-box">
