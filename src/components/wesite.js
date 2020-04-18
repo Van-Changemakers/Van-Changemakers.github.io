@@ -11,7 +11,7 @@ export default function WeSite () {
     <>
       <Header />
       <main class="wgs-main">
-        <Section title="Resources" tiles={[{title: "Email Reps", icon: EmailRepsIcon, body: "Easily find and connect with your representatives in all levels of government."}]} />
+        <Section title="Resources" tiles={[{title: "Email Reps", icon: EmailRepsIcon, body: "Easily find and connect with your representatives in all levels of government.", url: "https://jamesbmadden.github.io/email-mp"}]} />
       </main>
     </>
   );
