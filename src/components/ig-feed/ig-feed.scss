@@ -33,6 +33,7 @@
   padding: 1rem;
   margin: 0;
   text-align: justify;
+  line-height: 1.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,8 +42,5 @@
   height: 100%;
   white-space: normal;
   color: white;
-  display: -webkit-box;
-  -webkit-line-clamp: 12;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
+  transition: opacity 0.2s;
 }
