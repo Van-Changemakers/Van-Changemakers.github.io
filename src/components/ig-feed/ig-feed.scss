@@ -1,0 +1,18 @@
+.wgs-ig-post {
+  position: relative;
+  height: 256px;
+  display: inline-block;
+
+  .wgs-ig-post-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .wgs-ig-post-bio {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}
