@@ -17,7 +17,6 @@ export default function Header () {
           <img src={Logo} alt="We" />
           <h1>Changemakers</h1>
         </div>
-        <h3>Temporary Title</h3>
       </header>
     </>
   )
