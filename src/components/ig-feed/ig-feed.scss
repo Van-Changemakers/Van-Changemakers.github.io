@@ -2,17 +2,24 @@
   position: relative;
   height: 256px;
   display: inline-block;
+  overflow: hidden;
+}
 
-  .wgs-ig-post-image {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
+.wgs-ig-post-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: filter 0.2s, transform 0.2s;
+  &:hover {
+    filter: blur(4px);
+    transform: scale(1.25);
   }
-  .wgs-ig-post-bio {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+}
 
+.wgs-ig-post-bio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
