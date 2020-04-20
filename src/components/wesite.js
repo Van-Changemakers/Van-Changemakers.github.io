@@ -10,7 +10,7 @@ export default function WeSite () {
   return (
     <>
       <Header />
-      <main class="wgs-main">
+      <main className="wgs-main">
         <Section title="Resources" tiles={[{title: "Email Reps", icon: EmailRepsIcon, body: "Easily find and connect with your representatives in all levels of government.", url: "https://jamesbmadden.github.io/email-mp"}]} />
       </main>
     </>
