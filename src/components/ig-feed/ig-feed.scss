@@ -7,7 +7,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   margin-right: 1rem;
   border-radius: 1rem;
-  &:hover, &:focus {
+  &:hover, &.focus-visible {
     transform: translateY(-2px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     .wgs-ig-post-image { // Since the bio comes above this, the hover style must be applied when the parent is being hovered.
