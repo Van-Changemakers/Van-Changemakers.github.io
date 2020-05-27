@@ -13,7 +13,7 @@ export default function Dialogue ({data}) {
         <div class="wgs-dialogue-header" style={{backgroundImage: `url(${header})`}} />
         <div class="wgs-title-and-icon">
           <div class="wgs-dialogue-icon">
-            <img src={icon} />
+            <img src={icon} alt={`${title} Icon`} />
           </div>
           <h1 class="wgs-dialogue-title">{title}</h1>
         </div>
