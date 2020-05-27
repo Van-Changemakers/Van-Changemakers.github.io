@@ -1,0 +1,11 @@
+.wgs-button {
+  position: relative;
+  height: calc(3rem - 8px);
+  top: 4px;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  ::after {
+    content: "";
+    
+  }
+}
