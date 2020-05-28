@@ -42,40 +42,19 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 96px;
-      background: linear-gradient(rgba(255, 255, 255, 0), white);
-    }
-  }
-
-  .wgs-title-and-icon {
-    display: flex;
-    margin: auto;
-    box-sizing: border-box;
-
-    position: relative;
-
-    top: -64px;
-
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   .wgs-dialogue-icon {
     display: block;
-    margin-right: 1rem;
+    margin: auto;
     box-sizing: border-box;
 
     position: relative;
 
     width: 128px;
     height: 128px;
+
+    top: -64px;
 
     background: white;
 
