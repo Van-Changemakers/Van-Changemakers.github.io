@@ -12,12 +12,15 @@ export default function Dialogue ({data}) {
     <>
       <div class="wgs-dialogue-background"></div>
       <div class="wgs-dialogue">
-        <div class="wgs-dialogue-header" style={{backgroundImage: `url(${header})`}} />
-        <div class="wgs-dialogue-icon">
-          <img src={icon} alt={`${title} Icon`} />
+        <div class="wgs-dialogue-header" style={{backgroundImage: `url(${header})`}}>
+          <div class="wgs-dialogue-titlebox">
+            <div class="wgs-dialogue-icon">
+              <img src={icon} alt={`${title} Icon`} />
+            </div>
+            <span class="wgs-dialogue-title">{title}</span>
+          </div>
         </div>
         <main class="wgs-dialogue-main">
-          <h1 class="wgs-dialogue-title">{title}</h1>
           <a href={url} target="_blank" rel="noreferrer noopener"><Button>Visit Website</Button></a>
           <p class="wgs-dialogue-bio">{bio}</p>
         </main>
