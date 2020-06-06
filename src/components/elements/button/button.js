@@ -4,7 +4,9 @@ import './button.scss';
 export default function Button ({ children }) {
   return (
     <button className="wgs-button">
-      {children}
+      <span className="wgs-button-inner">
+        {children}
+      </span>
     </button>
   )
 }
