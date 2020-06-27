@@ -8,7 +8,8 @@ const feed = [
     "icon": ChangemakersLogo,
     "bio": "",
     "url": "https://www.instagram.com/p/CB9B4gLnF4U/?utm_source=ig_web_copy_link",
-    "header": Sustainability
+    "header": Sustainability,
+    "platform": "Instagram"
   }
 ]
 

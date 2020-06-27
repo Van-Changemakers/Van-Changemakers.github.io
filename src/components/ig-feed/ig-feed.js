@@ -16,7 +16,7 @@ export default function IgFeed () {
             <img className="wgs-ig-post-image" src={post.header} alt="Post in Instagram Feed" />
             <div class="wgs-ig-post-info">
               <h1>{post.title}</h1>
-              <p>View on Instagram →</p>
+              <p>View on {post.platform} →</p>
             </div>
           </a>
         ))}
