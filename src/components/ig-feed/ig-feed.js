@@ -12,9 +12,9 @@ export default function IgFeed () {
       <h1 className="wgs-section-title">Social Media <Button>Follow Us on Instagram</Button><Button>Subscribe to our YouTube</Button></h1>
       <div className="wgs-section-horizontal-row">
         {feed.map(post => (
-          <a className="wgs-ig-post" key={post.title} tabindex="0" href={post.url} target="_blank" rel="noreferrer noopener">
+          <a className="wgs-ig-post" key={post.title} tabIndex="0" href={post.url} target="_blank" rel="noreferrer noopener">
             <img className="wgs-ig-post-image" src={post.header} alt="Post in Instagram Feed" />
-            <div class="wgs-ig-post-info">
+            <div className="wgs-ig-post-info">
               <h1>{post.title}</h1>
               <p>View on {post.platform} →</p>
             </div>
