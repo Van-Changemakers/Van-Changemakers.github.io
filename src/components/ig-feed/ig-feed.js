@@ -3,13 +3,15 @@ import './ig-feed.scss';
 
 import feed from '../../assets/feed';
 
-import Button from '../elements/button/button';
+// import Button from '../elements/button/button';
+
+// <Button>Follow Us on Instagram</Button><Button>Subscribe to our YouTube</Button>
 
 export default function IgFeed () {
 
   return (
     <section className="wgs-ig">
-      <h1 className="wgs-section-title">Social Media <Button>Follow Us on Instagram</Button><Button>Subscribe to our YouTube</Button></h1>
+      <h1 className="wgs-section-title">Social Media</h1>
       <div className="wgs-section-horizontal-row">
         {feed.map(post => (
           <a className="wgs-ig-post" key={post.title} tabIndex="0" href={post.url} target="_blank" rel="noreferrer noopener">

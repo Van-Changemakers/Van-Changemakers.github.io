@@ -59,3 +59,21 @@
     padding-bottom: 0;
   }
 }
+
+@media (max-width: 448px) {
+  .wgs-section-horizontal-row {
+    display: grid;
+    grid-template-columns: repeat(100, 100%);
+    grid-template-rows: 1fr;
+    overflow-x: auto;
+    grid-gap: 0.5rem;
+    .wgs-ig-post {
+      margin-right: 0;
+      height: unset;
+      .wgs-ig-post-image {
+        width: 100%;
+        height: unset;
+      }
+    }
+  }
+}
