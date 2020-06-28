@@ -9,6 +9,9 @@ body {
 .wgs-main {
   padding: 1rem;
 }
+.wgs-section-title {
+  margin: 0.5rem 0;
+}
 a {
   text-decoration: none;
 }
