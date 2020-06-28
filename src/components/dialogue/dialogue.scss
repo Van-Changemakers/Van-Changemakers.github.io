@@ -93,3 +93,32 @@
     font-weight: 700;
   }
 }
+
+@media (max-width: 820px) {
+  .wgs-dialogue {
+    .wgs-dialogue-content {
+      display: block;
+      height: initial;
+    }
+    .wgs-dialogue-header {
+      height: 386px;
+    }
+    .wgs-dialogue-icon {
+      width: 96px;
+      height: 96px;
+      top: 338px;
+      left: calc(50% - 48px);
+    }
+  }
+  .wgs-dialogue-titlebox {
+  
+    .wgs-dialogue-title {
+      color: white;
+      font-size: 16.5vw;
+      margin: 0;
+      padding: 1rem;
+      padding-bottom: 48px;
+      font-weight: 700;
+    }
+  }
+}
