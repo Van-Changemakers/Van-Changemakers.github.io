@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import Logo from '../../assets/we_logo_white.png';
+import Logo from '../../assets/changemakers_logo.png';
 import Skyline from '../../assets/skyline.jpg';
 
 export default function Header () {
