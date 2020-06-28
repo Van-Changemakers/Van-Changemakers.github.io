@@ -2,6 +2,7 @@ import React from 'react';
 import './wesite.scss';
 
 import Home from '../pages/home';
+import Error404 from '../pages/error404';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -20,6 +21,9 @@ export default function WeSite () {
         </Route>
         <Route path="/other">
           <p>OwO EwE</p>
+        </Route>
+        <Route path="*">
+          <Error404 />
         </Route>
       </Router>
     </>
