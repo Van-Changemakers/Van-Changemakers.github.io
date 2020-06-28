@@ -6,7 +6,7 @@ import IgFeed from '../components/ig-feed/ig-feed';
 
 import Resources from '../assets/resources';
 
-export default function WeSite () {
+export default function Home () {
   return (
     <>
       <Header />
