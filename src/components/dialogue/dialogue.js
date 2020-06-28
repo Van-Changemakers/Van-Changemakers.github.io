@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './dialogue.scss';
 
 import Button from '../elements/button/button';
 
 export default function Dialogue ({data}) {
 
-  document.body.style.overflow = 'hidden';
+  useEffect(() => {
+    document.body.style.overflowY = 'hidden';
+
+    return () => {
+      document.body.style.overflowY = 'unset';
+    }
+  })
 
   const { icon, bio, title, header, url } = data;
   return (
