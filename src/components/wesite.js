@@ -3,10 +3,25 @@ import './wesite.scss';
 
 import Home from '../pages/home';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 export default function WeSite () {
   return (
     <>
-      <Home />
+      <div className="wgs-header-links">
+        <a href="#calendar">Calendar</a>
+        <a href="#fundraisers">Fundraisers</a>
+        <a href="#resources">Resources</a>
+        <a href="#social_media">Social Media</a>
+      </div>
+      <Router>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/other">
+          <p>OwO EwE</p>
+        </Route>
+      </Router>
     </>
   );
 }

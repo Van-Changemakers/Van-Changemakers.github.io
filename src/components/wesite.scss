@@ -1,0 +1,23 @@
+.wgs-header-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(24, 174, 232, 1), rgba(19, 198, 163, 1));
+  z-index: 1;
+  a {
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+@supports (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px)) {
+  .wgs-header-links {
+    background: linear-gradient(90deg, rgba(24, 174, 232, 0.5), rgba(19, 198, 163, 0.5));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
