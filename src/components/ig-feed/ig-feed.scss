@@ -67,9 +67,11 @@
     grid-template-rows: 1fr;
     overflow-x: auto;
     grid-gap: 0.5rem;
+    scroll-snap-type: x proximity;
     .wgs-ig-post {
       margin-right: 0;
       height: unset;
+      scroll-snap-align: center;
       .wgs-ig-post-image {
         width: 100%;
         height: unset;
