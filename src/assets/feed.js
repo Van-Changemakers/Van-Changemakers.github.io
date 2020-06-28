@@ -1,5 +1,7 @@
 import ChangemakersLogo from './ig_logo.png';
 import Sustainability from './feed/sustainability_2020_06_27.jpg';
+import FlowerSale from './feed/flower_sale.jpg';
+import MovieNight from './feed/movie_night.jpg';
 
 const feed = [
   {
@@ -12,21 +14,21 @@ const feed = [
     "platform": "Instagram"
   },
   {
-    "title": "9 Ways YOU Can Be Sustainable at Home",
-    "tagline": "Easily find and connect with your representatives in all levels of government.",
+    "title": "Flower Sale",
+    "tagline": "",
     "icon": ChangemakersLogo,
     "bio": "",
     "url": "https://www.instagram.com/p/CB9B4gLnF4U/?utm_source=ig_web_copy_link",
-    "header": Sustainability,
+    "header": FlowerSale,
     "platform": "Instagram"
   },
   {
-    "title": "9 Ways YOU Can Be Sustainable at Home",
-    "tagline": "Easily find and connect with your representatives in all levels of government.",
+    "title": "Movie Night",
+    "tagline": "",
     "icon": ChangemakersLogo,
     "bio": "",
     "url": "https://www.instagram.com/p/CB9B4gLnF4U/?utm_source=ig_web_copy_link",
-    "header": Sustainability,
+    "header": MovieNight,
     "platform": "Instagram"
   }
 ]
