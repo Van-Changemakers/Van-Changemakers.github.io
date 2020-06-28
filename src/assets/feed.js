@@ -1,5 +1,5 @@
 import ChangemakersLogo from './changemakers_logo.png';
-import Sustainability from './feed/sustainability_2020_06_27.png';
+import Sustainability from './feed/sustainability_2020_06_27.jpg';
 
 const feed = [
   {
