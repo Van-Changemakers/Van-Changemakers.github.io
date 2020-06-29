@@ -2,6 +2,7 @@ import ChangemakersLogo from './ig_logo.png';
 import Sustainability from './feed/sustainability_2020_06_27.jpg';
 import FlowerSale from './feed/flower_sale.jpg';
 import MovieNight from './feed/movie_night.jpg';
+import WeDay from './feed/we_day.jpg';
 
 const feed = [
   {
@@ -29,6 +30,15 @@ const feed = [
     "bio": "",
     "url": "https://www.instagram.com/p/CB9B4gLnF4U/?utm_source=ig_web_copy_link",
     "header": MovieNight,
+    "platform": "Instagram"
+  },
+  {
+    "title": "We Day",
+    "tagline": "",
+    "icon": ChangemakersLogo,
+    "bio": "",
+    "url": "https://www.instagram.com/p/CB9B4gLnF4U/?utm_source=ig_web_copy_link",
+    "header": WeDay,
     "platform": "Instagram"
   }
 ]
