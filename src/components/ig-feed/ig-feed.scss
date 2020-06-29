@@ -60,14 +60,14 @@
   }
 }
 
-@media (max-width: 448px) {
+@media (max-width: 644px) {
   .wgs-section-horizontal-row {
     display: grid;
     grid-template-columns: repeat(100, 100%);
     grid-template-rows: 1fr;
     overflow-x: auto;
     grid-gap: 0.5rem;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     .wgs-ig-post {
       margin-right: 0;
       height: unset;
