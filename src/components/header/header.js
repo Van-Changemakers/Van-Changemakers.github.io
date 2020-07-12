@@ -3,6 +3,8 @@ import './header.scss';
 import Logo from '../../assets/we_logo_white.png';
 import Skyline from '../../assets/skyline.jpg';
 
+import Calendar from './calendar/calendar';
+
 export default function Header () {
   return (
     <>
@@ -11,6 +13,7 @@ export default function Header () {
           <img src={Logo} alt="We" />
           <h1>Changemakers</h1>
         </div>
+        <Calendar></Calendar>
       </header>
     </>
   )

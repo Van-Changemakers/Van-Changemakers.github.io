@@ -1,0 +1,61 @@
+.wgs-header-calendar {
+  position: absolute;
+  width: calc(100% - 8rem);
+  height: 6rem;
+  margin: 0;
+  bottom: -3rem;
+  background: white;
+  color: black;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  @media (max-width: 644px) {
+    width: calc(100% - 4rem);
+  }
+}
+
+.wgs-header-calendar-label {
+  position: absolute;
+  left: 6rem;
+  bottom: 3rem;
+  font-weight: 700;
+  @media (max-width: 644px) {
+    left: 3rem;
+  }
+}
+
+.wgs-header-calendar-date {
+  height: 6rem;
+  width: 6rem;
+  padding: 0 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px #e3e3e3 solid;
+  * {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+}
+.wgs-header-calendar-title {
+  height: 6rem;
+  width: calc(100% - 16rem);
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.wgs-header-calendar-location {
+  display: inline-block;
+  height: 6rem;
+  width: 8rem;
+}
