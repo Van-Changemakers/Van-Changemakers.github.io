@@ -53,9 +53,15 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 644px) {
+    width: calc(100% - 8rem);
+  }
 }
 .wgs-header-calendar-location {
   display: inline-block;
   height: 6rem;
   width: 8rem;
+  @media (max-width: 644px) {
+    display: none;
+  }
 }
