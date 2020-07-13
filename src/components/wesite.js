@@ -3,6 +3,7 @@ import './wesite.scss';
 
 import Home from '../pages/home';
 import Error404 from '../pages/error404';
+import SocialMedia from '../pages/socialmedia';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DialogueManager from './dialogue/dialogue-manager';
@@ -22,6 +23,9 @@ export default function WeSite () {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/socialmedia">
+            <SocialMedia />
           </Route>
           <Route path="/resources/:index">
             <DialogueManager data={Resources} />
