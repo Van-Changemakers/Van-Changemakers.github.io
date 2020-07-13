@@ -13,7 +13,7 @@ export default function Home () {
       <Header />
       <main className="wgs-main">
         <IgFeed></IgFeed>
-        <Section title="Resources" tiles={Resources} />
+        <Section title="Organizations" tiles={Resources} />
       </main>
       <Footer />
     </>
