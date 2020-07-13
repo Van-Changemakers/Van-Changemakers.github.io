@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 644px) {
-  .wgs-section-horizontal-row {
+  .wgs-section-horizontal-row:not(.wrap) {
     display: grid;
     grid-template-columns: repeat(100, 100%);
     grid-template-rows: 1fr;

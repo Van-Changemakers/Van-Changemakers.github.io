@@ -7,12 +7,12 @@ import feed from '../../assets/feed';
 
 // <Button>Follow Us on Instagram</Button><Button>Subscribe to our YouTube</Button>
 
-export default function IgFeed () {
+export default function IgFeed ({wrap = false}) {
 
   return (
     <section className="wgs-ig">
       <h1 className="wgs-section-title">Social Media</h1>
-      <div className="wgs-section-horizontal-row">
+      <div className={`wgs-section-horizontal-row ${wrap ? 'wrap' : ''}`}>
         {feed.map(post => (
           <a className="wgs-ig-post" key={post.title} tabIndex="0" href={post.url} target="_blank" rel="noreferrer noopener">
             <img className="wgs-ig-post-image" src={post.header} alt="Post in Instagram Feed" />
