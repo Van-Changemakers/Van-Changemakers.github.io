@@ -15,3 +15,13 @@ body {
 a {
   text-decoration: none;
 }
+a.link {
+  font-weight: 600;
+  color: #128ABA;
+}
+a.link:hover {
+  text-decoration: underline;
+}
+a.link:active {
+  color: #0D6182;
+}
