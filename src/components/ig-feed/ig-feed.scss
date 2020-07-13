@@ -83,4 +83,13 @@
       }
     }
   }
+  .wgs-section-horizontal-row.wrap {
+    .wgs-ig-post {
+      width: 100%; 
+      height: unset;
+      .wgs-ig-post-image {
+        width: 100%;
+      }
+    }
+  }
 }
