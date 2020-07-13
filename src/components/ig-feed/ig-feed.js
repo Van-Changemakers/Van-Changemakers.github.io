@@ -3,9 +3,7 @@ import './ig-feed.scss';
 
 import feed from '../../assets/feed';
 
-// import Button from '../elements/button/button';
-
-// <Button>Follow Us on Instagram</Button><Button>Subscribe to our YouTube</Button>
+import { Link } from 'react-router-dom';
 
 export default function IgFeed ({wrap = false}) {
 
@@ -23,6 +21,7 @@ export default function IgFeed ({wrap = false}) {
           </a>
         ))}
       </div>
+      {wrap ? '' : <Link className="link" to="/socialmedia">View All →</Link>}
     </section>
   );
 }
