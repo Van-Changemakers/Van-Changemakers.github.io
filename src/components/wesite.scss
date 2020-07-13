@@ -4,14 +4,19 @@
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   background: linear-gradient(90deg, rgba(24, 174, 232, 1), rgba(19, 198, 163, 1));
   z-index: 1;
-  a {
+  .textlink {
     padding: 1rem;
     cursor: pointer;
     color: white;
   }
+}
+
+.wgs-home-link {
+  height: 36px;
+  padding: 8px;
 }
 
 @supports (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px)) {

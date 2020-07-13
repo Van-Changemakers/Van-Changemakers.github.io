@@ -8,18 +8,21 @@ import SocialMedia from '../pages/socialmedia';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import DialogueManager from './dialogue/dialogue-manager';
 
+import ChangemakersLogoWhite from '../assets/changemakers_logo_white.png';
+
 import Resources from '../assets/resources';
+
+import { Link } from 'react-router-dom';
 
 export default function WeSite () {
   return (
     <>
-      <div className="wgs-header-links">
-        <a href="#calendar">Calendar</a>
-        <a href="#fundraisers">Fundraisers</a>
-        <a href="#resources">Resources</a>
-        <a href="#social_media">Social Media</a>
-      </div>
       <Router>
+        <div className="wgs-header-links">
+          <Link to="/"><img className="wgs-home-link" src={ChangemakersLogoWhite} alt="Changemakers Logo" /></Link>
+          <a class="textlink" href="#calendar">Contact Us</a>
+          <Link class="textlink" to="/socialmedia">Social Media</Link>
+        </div>
         <Switch>
           <Route exact path="/">
             <Home />
