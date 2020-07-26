@@ -20,8 +20,8 @@ export default function WeSite () {
       <Router>
         <div className="wgs-header-links">
           <Link to="/"><img className="wgs-home-link" src={ChangemakersLogoWhite} alt="Changemakers Logo" /></Link>
-          <a class="textlink" href="#calendar">Contact Us</a>
-          <Link class="textlink" to="/socialmedia">Social Media</Link>
+          <a className="textlink" href="#calendar">Contact Us</a>
+          <Link className="textlink" to="/socialmedia">Social Media</Link>
         </div>
         <Switch>
           <Route exact path="/">
@@ -30,7 +30,7 @@ export default function WeSite () {
           <Route path="/socialmedia">
             <SocialMedia />
           </Route>
-          <Route path="/resources/:index">
+          <Route path="/organizations/:index">
             <DialogueManager data={Resources} />
           </Route>
           <Route path="*">

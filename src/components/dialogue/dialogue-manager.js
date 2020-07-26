@@ -3,18 +3,19 @@ import Dialogue from './dialogue';
 
 import './dialogue-manager.scss';
 
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import Skyline from '../../assets/skyline.jpg';
 
 export default function DialogueManager ({ data }) {
 
-  const { index } = useParams();
+  let { index } = useParams();
+  index = Number(index);
 
-  // eslint-disable-next-line
-  const isFirstEntry = index == 0;
-  // eslint-disable-next-line
-  const isLastEntry = index + 1 == data.length;
+  const history = useHistory();
+
+  const isFirstEntry = index === 0;
+  const isLastEntry = index + 1 === data.length;
 
   useEffect(() => {
 
@@ -29,6 +30,27 @@ export default function DialogueManager ({ data }) {
     }
   });
 
+  function handleScroll (event) {
+    let scrollView = event.target;
+    let scrollViewBox = scrollView.getBoundingClientRect();
+    let dialogues = scrollView.querySelectorAll('.wgs-dialogue');
+    let dialoguesArray = Array.from(dialogues);
+  
+    scrollView.addEventListener('scroll', () => {
+      dialoguesArray.forEach((dialogue, index) => {
+        let pos = scrollViewBox.width * index;
+        let offset = Math.abs(scrollView.scrollLeft - pos);
+        dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
+      });
+    });
+    if (scrollView.scrollLeft % scrollViewBox.width === 0) {
+      let newIndex = scrollView.scrollLeft / scrollViewBox.width - 1;
+      if (isFirstEntry) newIndex++;
+      // eslint-disable-next-line
+      if (newIndex != 0) history.push(`/organizations/${Number(index) + newIndex}`);
+    }
+  }
+
   return (
     <div className="dm-scroll-parent">
       <div className="dm-scroll-container" style={{backgroundImage: `linear-gradient(90deg, rgba(24, 174, 232, 0.75), rgba(19, 198, 163, 0.75)), url(${Skyline})`}}>
@@ -39,19 +61,4 @@ export default function DialogueManager ({ data }) {
     </div>
   )
 
-}
-
-function handleScroll (event) {
-  let scrollView = event.target;
-  let scrollViewBox = scrollView.getBoundingClientRect();
-  let dialogues = scrollView.querySelectorAll('.wgs-dialogue');
-  let dialoguesArray = Array.from(dialogues);
-
-  scrollView.addEventListener('scroll', () => {
-    dialoguesArray.forEach((dialogue, index) => {
-      let pos = scrollViewBox.width * index;
-      let offset = Math.abs(scrollView.scrollLeft - pos);
-      dialogue.style.transform = `scale(${1 - Math.min(0.5, offset / scrollViewBox.width)})`;
-    });
-  });
 }
