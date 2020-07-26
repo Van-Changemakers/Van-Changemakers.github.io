@@ -3,7 +3,7 @@ import './dialogue.scss';
 
 import Button from '../elements/button/button';
 
-export default function Dialogue ({data}) {
+export default function Dialogue ({data, index}) {
 
   useEffect(() => {
     document.body.style.overflowY = 'hidden';
@@ -15,7 +15,7 @@ export default function Dialogue ({data}) {
 
   const { icon, bio, title, header, url } = data;
   return (
-    <div className="wgs-dialogue">
+    <div className="wgs-dialogue" data-index={index}>
       <div className="wgs-dialogue-content">
         <div className="wgs-dialogue-header" style={{backgroundImage: `url(${header})`}}>
           <div className="wgs-dialogue-titlebox">
