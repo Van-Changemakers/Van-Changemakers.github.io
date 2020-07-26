@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.12292e7b.chunk.css",
-    "main.js": "/static/js/main.29f43917.chunk.js",
-    "main.js.map": "/static/js/main.29f43917.chunk.js.map",
+    "main.js": "/static/js/main.b2e8abaa.chunk.js",
+    "main.js.map": "/static/js/main.b2e8abaa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4584af55.js",
     "runtime-main.js.map": "/static/js/runtime-main.4584af55.js.map",
-    "static/js/2.e885a773.chunk.js": "/static/js/2.e885a773.chunk.js",
-    "static/js/2.e885a773.chunk.js.map": "/static/js/2.e885a773.chunk.js.map",
+    "static/js/2.3e4ba358.chunk.js": "/static/js/2.3e4ba358.chunk.js",
+    "static/js/2.3e4ba358.chunk.js.map": "/static/js/2.3e4ba358.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0aa8007f27c438b2d02838076b8434aa.js": "/precache-manifest.0aa8007f27c438b2d02838076b8434aa.js",
+    "precache-manifest.6df4274554abda57d984433486f7afdc.js": "/precache-manifest.6df4274554abda57d984433486f7afdc.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.12292e7b.chunk.css.map": "/static/css/main.12292e7b.chunk.css.map",
-    "static/js/2.e885a773.chunk.js.LICENSE.txt": "/static/js/2.e885a773.chunk.js.LICENSE.txt",
+    "static/js/2.3e4ba358.chunk.js.LICENSE.txt": "/static/js/2.3e4ba358.chunk.js.LICENSE.txt",
     "static/media/changemakers_logo.png": "/static/media/changemakers_logo.80e43770.png",
     "static/media/changemakers_logo_white.png": "/static/media/changemakers_logo_white.9da54477.png",
     "static/media/flower_sale.jpg": "/static/media/flower_sale.8a85bf03.jpg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4584af55.js",
-    "static/js/2.e885a773.chunk.js",
+    "static/js/2.3e4ba358.chunk.js",
     "static/css/main.12292e7b.chunk.css",
-    "static/js/main.29f43917.chunk.js"
+    "static/js/main.b2e8abaa.chunk.js"
   ]
 }
