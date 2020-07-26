@@ -45,6 +45,8 @@ export default function DialogueManager ({ data }) {
       let newIndex = Number(dialogues[scrolledIndex].getAttribute('data-index'));
       if (newIndex !== index) {
         console.log('changing page to ', newIndex);
+        if (newIndex === 0) scrollView.scrollLeft = 0;
+        if (newIndex !== 0) scrollView.scrollLeft = window.innerWidth;
         history.push(`/organizations/${newIndex}`);
       }
     }
