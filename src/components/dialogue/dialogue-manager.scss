@@ -1,0 +1,35 @@
+.dm-scroll-parent {
+  -webkit-overflow-scrolling: touch;
+}
+
+.dm-scroll-container {
+  white-space: nowrap;
+  width: 100vw;
+  overflow-x: hidden;
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-x: repeat(100%);
+  background-size: cover, cover;
+
+  .wgs-dialogue {
+    position: relative;
+    display: inline-block;
+    scroll-snap-align: center;
+    white-space: normal;
+
+    .wgs-dialogue-header {
+      flex-shrink: 0;
+      width: 50vw;
+      @media (max-width: 820px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@supports (scroll-snap-type: y mandatory) {
+  .dm-scroll-container {
+    overflow-x: auto;
+  }
+}

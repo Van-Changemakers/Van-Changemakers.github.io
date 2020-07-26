@@ -18,6 +18,22 @@ const resources = [
     "url": "https://theoceancleanup.com/",
     "header": "https://assets.theoceancleanup.com/app/uploads/2019/09/190706_Parachute_Test_Day4-9-crop-1280x732.jpg"
   },
+  {
+    "title": "The Ocean Cleanup",
+    "tagline": "The Ocean Cleanup is working to remove plastic from our oceans.",
+    "icon": OceanCleanupLogo,
+    "bio": "Our oceans are one of the most vital parts of our environment - not only are they a beautiful part of our earth, but they are crucial to the stability of the ecosystems around us. They provide a home for millions of aquatic creatures, while also producing over half of our world’s oxygen. Covering 70% of the surface on earth, our oceans are vital to life on earth. Unfortunately, right now, oceans are facing one of the biggest environmental issues of our time: pollution of garbage and plastics. There is an estimated 5.25 trillion pieces of garbage in the ocean, which over time have collected in 5 primary garbage patches all over the oceans. The pollution of the ocean is devastating to the ecosystem, water animals, coral reefs, and will significantly harm the levels of oxygen that we breathe especially if the garbage continues to increase. However, there is still hope. An organization called The Ocean Cleanup, founded by 25-year old Dutch innovator Boyan Slat, is taking action to save our oceans by cleaning up these ocean garbage patches. This non-profit organization is designing and developing systems to clean the plastics already in the oceans, while preventing more garbage from entering the oceans. The Ocean Cleanup is estimated to be able to remove 50% of the Great Pacific Garbage Patch (the largest patch in the pacific ocean) every 5 years. These groundbreaking systems will be saving millions of aquatic wildlife and ecosystems, giving us hope for the environment once more.",
+    "url": "https://theoceancleanup.com/",
+    "header": "https://assets.theoceancleanup.com/app/uploads/2019/09/190706_Parachute_Test_Day4-9-crop-1280x732.jpg"
+  },
+  {
+    "title": "The Ocean Cleanup",
+    "tagline": "The Ocean Cleanup is working to remove plastic from our oceans.",
+    "icon": OceanCleanupLogo,
+    "bio": "Our oceans are one of the most vital parts of our environment - not only are they a beautiful part of our earth, but they are crucial to the stability of the ecosystems around us. They provide a home for millions of aquatic creatures, while also producing over half of our world’s oxygen. Covering 70% of the surface on earth, our oceans are vital to life on earth. Unfortunately, right now, oceans are facing one of the biggest environmental issues of our time: pollution of garbage and plastics. There is an estimated 5.25 trillion pieces of garbage in the ocean, which over time have collected in 5 primary garbage patches all over the oceans. The pollution of the ocean is devastating to the ecosystem, water animals, coral reefs, and will significantly harm the levels of oxygen that we breathe especially if the garbage continues to increase. However, there is still hope. An organization called The Ocean Cleanup, founded by 25-year old Dutch innovator Boyan Slat, is taking action to save our oceans by cleaning up these ocean garbage patches. This non-profit organization is designing and developing systems to clean the plastics already in the oceans, while preventing more garbage from entering the oceans. The Ocean Cleanup is estimated to be able to remove 50% of the Great Pacific Garbage Patch (the largest patch in the pacific ocean) every 5 years. These groundbreaking systems will be saving millions of aquatic wildlife and ecosystems, giving us hope for the environment once more.",
+    "url": "https://theoceancleanup.com/",
+    "header": "https://assets.theoceancleanup.com/app/uploads/2019/09/190706_Parachute_Test_Day4-9-crop-1280x732.jpg"
+  },
 ]
 
 export default resources;
