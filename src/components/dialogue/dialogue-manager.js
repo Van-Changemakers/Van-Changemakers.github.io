@@ -62,7 +62,11 @@ export default function DialogueManager ({ data }) {
       </div>
       <div className="wgs-dialogue-fab-bar">
         <button class="wgs-fab wgs-fab-small" onClick={() => {
-          document.querySelector('.dm-scroll-container').scrollLeft -= window.innerWidth;
+          document.querySelector('.dm-scroll-container').scrollTo({
+            top: 0,
+            left: document.querySelector('.dm-scroll-container').scrollLeft - window.innerWidth,
+            behavior: 'smooth'
+          });
         }}><span class="wgs-fab-inner">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </span></button>
@@ -71,7 +75,11 @@ export default function DialogueManager ({ data }) {
           <span class="wgs-fab-text">Close</span>
         </span></button>
         <button class="wgs-fab wgs-fab-small" onClick={() => {
-          document.querySelector('.dm-scroll-container').scrollLeft += window.innerWidth;
+          document.querySelector('.dm-scroll-container').scrollTo({
+            top: 0,
+            left: document.querySelector('.dm-scroll-container').scrollLeft + window.innerWidth,
+            behavior: 'smooth'
+          });
         }}><span class="wgs-fab-inner">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
         </span></button>
