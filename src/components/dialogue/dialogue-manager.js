@@ -36,9 +36,9 @@ export default function DialogueManager ({ data }) {
     let dialogues = scrollView.querySelectorAll('.wgs-dialogue');
     let dialoguesArray = Array.from(dialogues);
     dialoguesArray.forEach((dialogue, index) => {
-      // let pos = scrollViewBox.width * index;
-      // let offset = Math.abs(scrollView.scrollLeft - pos);
-      //dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
+      let pos = scrollViewBox.width * index;
+      let offset = Math.abs(scrollView.scrollLeft - pos);
+      dialogue.style.transform = `scale(${1 - Math.min(0.1, offset / scrollViewBox.width)})`;
     });
     if (scrollView.scrollLeft % scrollViewBox.width === 0) {
       let scrolledIndex = scrollView.scrollLeft / scrollViewBox.width;
