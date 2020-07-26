@@ -38,7 +38,7 @@ export default function DialogueManager ({ data }) {
     dialoguesArray.forEach((dialogue, index) => {
       let pos = scrollViewBox.width * index;
       let offset = Math.abs(scrollView.scrollLeft - pos);
-      dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
+      //dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
     });
     if (scrollView.scrollLeft % scrollViewBox.width === 0) {
       let scrolledIndex = scrollView.scrollLeft / scrollViewBox.width;
@@ -48,6 +48,7 @@ export default function DialogueManager ({ data }) {
         if (newIndex === 0) scrollView.scrollLeft = 0;
         if (newIndex !== 0) scrollView.scrollLeft = window.innerWidth;
         history.push(`/organizations/${newIndex}`);
+        return;
       }
     }
   }
