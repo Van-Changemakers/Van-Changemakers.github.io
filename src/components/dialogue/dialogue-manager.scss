@@ -6,10 +6,7 @@
   white-space: nowrap;
   width: 100vw;
   overflow-x: hidden;
-  -webkit-scroll-snap-type: mandatory;
-  -webkit-scroll-snap-points-x: repeat(100%);
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: x mandatory;
   background-size: cover, cover;
 
   .wgs-dialogue {
@@ -28,7 +25,7 @@
   }
 }
 
-@supports (scroll-snap-type: y mandatory) {
+@supports (scroll-snap-type: x mandatory) {
   .dm-scroll-container {
     overflow-x: auto;
   }

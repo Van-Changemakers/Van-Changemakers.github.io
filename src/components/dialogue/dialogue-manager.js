@@ -35,13 +35,10 @@ export default function DialogueManager ({ data }) {
     let scrollViewBox = scrollView.getBoundingClientRect();
     let dialogues = scrollView.querySelectorAll('.wgs-dialogue');
     let dialoguesArray = Array.from(dialogues);
-  
-    scrollView.addEventListener('scroll', () => {
-      dialoguesArray.forEach((dialogue, index) => {
-        let pos = scrollViewBox.width * index;
-        let offset = Math.abs(scrollView.scrollLeft - pos);
-        dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
-      });
+    dialoguesArray.forEach((dialogue, index) => {
+      let pos = scrollViewBox.width * index;
+      let offset = Math.abs(scrollView.scrollLeft - pos);
+      dialogue.style.transform = `scale(${1 - Math.min(0.25, offset / scrollViewBox.width)})`;
     });
     if (scrollView.scrollLeft % scrollViewBox.width === 0) {
       let newIndex = scrollView.scrollLeft / scrollViewBox.width - 1;
