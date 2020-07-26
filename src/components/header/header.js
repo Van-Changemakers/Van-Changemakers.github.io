@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.scss';
-import Logo from '../../assets/we_logo_white.png';
 import Skyline from '../../assets/skyline.jpg';
 
 import Calendar from './calendar/calendar';
