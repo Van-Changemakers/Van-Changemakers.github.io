@@ -10,7 +10,7 @@ export default function Header () {
     <>
       <header className="wgs-header" style={{backgroundImage: `linear-gradient(90deg, rgba(24, 174, 232, 0.75), rgba(19, 198, 163, 0.75)), url(${Skyline})`}}>
         <div className="wgs-header-title-box">
-          <img src={Logo} alt="We" />
+          <h3>VANCOUVER</h3>
           <h1>Changemakers</h1>
         </div>
         <Calendar></Calendar>
