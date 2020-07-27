@@ -30,6 +30,7 @@ export default function Dialogue ({data, index}) {
       <div className="wgs-dialogue-icon">
         <img src={icon} alt={`${title} Icon`} />
       </div>
+      <div className="wgs-dialogue-fab-bg"></div>
     </div>
   )
 }

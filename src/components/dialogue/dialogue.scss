@@ -94,6 +94,15 @@
   }
 }
 
+.wgs-dialogue-fab-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 128px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
 @media (max-width: 820px) {
   .wgs-dialogue {
     .wgs-dialogue-content {
