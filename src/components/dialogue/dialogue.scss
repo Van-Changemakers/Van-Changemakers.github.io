@@ -103,6 +103,7 @@
   width: 50vw;
   height: 128px;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  z-index: 1;
 }
 
 @media (max-width: 820px) {
@@ -120,6 +121,9 @@
       top: 338px;
       left: calc(50% - 48px);
     }
+    .wgs-dialogue-fab-bg {
+      display: none;
+    }
   }
   .wgs-dialogue-titlebox {
   
@@ -130,6 +134,16 @@
       padding: 1rem;
       padding-bottom: 48px;
       font-weight: 700;
+    }
+  }
+  
+  .wgs-dialogue:first-of-type {
+    .wgs-dialogue-fab-bg {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: block;
     }
   }
 }
