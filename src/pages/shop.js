@@ -50,6 +50,7 @@ export default function Home () {
         <div className="wgs-split-box">
           <div className="wgs-shop-products">
             <h2>Cards</h2>
+            <p><i>Note: Orders are requested via email and processed by hand. Please be patient in awaiting a reply with further information. Thank you!</i></p>
 
             {Cards.map((card, index) => {
               return (
