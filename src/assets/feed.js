@@ -3,8 +3,18 @@ import Sustainability from './feed/sustainability_2020_06_27.jpg';
 import FlowerSale from './feed/flower_sale.jpg';
 import MovieNight from './feed/movie_night.jpg';
 import WeDay from './feed/we_day.jpg';
+import HolidayCard from './cards/0.jpg';
 
 const feed = [
+  {
+    "title": "Holiday Card Sale",
+    "tagline": "",
+    "icon": undefined,
+    "bio": "",
+    "url": "https://www.instagram.com/p/CIwWuqFnf12/",
+    "header": HolidayCard,
+    "platform": "Instagram"
+  },
   {
     "title": "9 Ways YOU Can Be Sustainable at Home",
     "tagline": "Easily find and connect with your representatives in all levels of government.",
