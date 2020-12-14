@@ -16,8 +16,8 @@ export default function Dialogue ({data, index}) {
   const { icon, bio, title, header, url } = data;
   return (
     <div className="wgs-dialogue" data-index={index}>
-      <div className="wgs-dialogue-content">
-        <div className="wgs-dialogue-header" style={{backgroundImage: `url(${header})`}}>
+      <div className="wgs-dialogue-content" style={{backgroundImage: `url(${header})`}}>
+        <div className="wgs-dialogue-header">
           <div className="wgs-dialogue-titlebox">
             <h1 className="wgs-dialogue-title">{title}</h1>
           </div>
