@@ -1,3 +1,18 @@
+@keyframes listRowEnter {
+  from {
+    opacity: 0;
+    transform: translate(2rem);
+    margin-bottom: -64px;
+  }
+}
+@keyframes listRowExit {
+  to {
+    opacity: 0;
+    transform: translate(2rem);
+    margin-bottom: -64px;
+  }
+}
+
 .wgs-split-box {
   display: flex;
   width: 100%;
@@ -107,6 +122,9 @@
     }
   }
     
+  .wgs-shop-cart-button {
+    display: none;
+  }
 }
 
 .wgs-shop-cart-item {
@@ -116,6 +134,12 @@
   height: 64px;
   margin-bottom: 1rem;
   align-items: center;
+  opacity: 1;
+  animation: listRowEnter 0.4s;
+  transform: translate(0);
+  &.exit {
+    animation: listRowExit 0.4s;
+  }
 
   img {
     height: 64px;
@@ -132,33 +156,46 @@
   }
 }
 
-.wgs-split-box .wgs-shop-cart-button {
-  display: none;
-}
-
 @media (max-width: 600px) {
   .wgs-split-box {
+    overflow-x: hidden;
+    .wgs-shop-cart-button {
+      display: flex;
+    }
     .wgs-shop-products {
-      border-right: none;
+      width: 100%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding: 0;
     }
     .wgs-shop-cart {
-      background: white;
       position: fixed;
+      height: calc(100vh - 56.5px);
+      left: calc(100% - 96px);
       top: 56.5px;
-      left: 0;
-      width: 100%;
-      height: calc(100% - 56.5px);
-      display: none;
-      &.open {
-        display: block;
+      background: #fafafa;
+      width: 100vw;
+      transition: transform 0.2s;
+      h2 .title {
+        transition: opacity 0.2s;
+        opacity: 0;
+      }
+      .send-button {
+        transition: opacity 0.2s;
+        opacity: 0;
       }
     }
-    .wgs-shop-cart-button {
-      z-index: 3;
-      display: flex;
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
+    .wgs-shop-cart.open {
+      transform: translate(calc(0px - calc(100vw - 96px)));
+      h2 .title {
+        opacity: 1;
+      }
+      .send-button {
+        opacity: 1;
+      }
     }
+  }
+  .wgs-main.shop {
+    width: calc(100% - 96px);
   }
 }
