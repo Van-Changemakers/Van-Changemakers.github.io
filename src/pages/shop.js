@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './shop.scss';
 
+import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
 import Button from '../components/elements/button/button';
-
-import ChangemakersLogo from '../assets/changemakers_logo.png';
 
 import Cards from '../assets/cards';
 
@@ -52,9 +51,8 @@ export default function Home () {
 
   return (
     <>
+      <Header image={Cards[0].image} title="Holiday Shop" subtitle="CHANGEMAKERS" showCalendar={false}></Header>
       <main className="wgs-main shop" style={{'padding-top': '64px', 'min-height': '100vh'}}>
-        <h1 className="wgs-section-title" style={{'text-align': 'center'}}><img src={ChangemakersLogo} alt="Changemakers" style={{'height': '1em', 'margin-right': '1rem'}} />Shop</h1>
-        <h1 style={{'text-align': 'center', 'font-style': 'italic', 'font-weight': '400'}}>products for a good cause</h1>
         <h1 className="wgs-section-title" style={{'text-align': 'center'}}>Holiday Cards</h1>
         <div className="wgs-split-box">
           <div className="wgs-shop-products">
