@@ -7,10 +7,10 @@ export default function Calendar () {
       <p class="wgs-header-calendar-label">UPCOMING FUNDRAISER</p>
       <div class="wgs-header-calendar">
         <div class="wgs-header-calendar-date">
-          <h1>28</h1>
-          <h3>August</h3>
+          <h1>12</h1>
+          <h3>December</h3>
         </div>
-        <div class="wgs-header-calendar-title">Flower Sale</div>
+        <div class="wgs-header-calendar-title">Holiday Card Sale</div>
         <div class="wgs-header-calendar-location">
 
         </div>
