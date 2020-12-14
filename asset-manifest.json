@@ -1,22 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.24db7eaf.chunk.css",
-    "main.js": "/static/js/main.499a26e2.chunk.js",
-    "main.js.map": "/static/js/main.499a26e2.chunk.js.map",
+    "main.js": "/static/js/main.b9a40253.chunk.js",
+    "main.js.map": "/static/js/main.b9a40253.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4584af55.js",
     "runtime-main.js.map": "/static/js/runtime-main.4584af55.js.map",
-    "static/js/2.681a0ef5.chunk.js": "/static/js/2.681a0ef5.chunk.js",
-    "static/js/2.681a0ef5.chunk.js.map": "/static/js/2.681a0ef5.chunk.js.map",
+    "static/js/2.977e70ff.chunk.js": "/static/js/2.977e70ff.chunk.js",
+    "static/js/2.977e70ff.chunk.js.map": "/static/js/2.977e70ff.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7af10ba9e43109e16e1c45768ff31dd0.js": "/precache-manifest.7af10ba9e43109e16e1c45768ff31dd0.js",
+    "precache-manifest.a8cdd57bb506d88657ca3ab63b83725f.js": "/precache-manifest.a8cdd57bb506d88657ca3ab63b83725f.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.24db7eaf.chunk.css.map": "/static/css/main.24db7eaf.chunk.css.map",
-    "static/js/2.681a0ef5.chunk.js.LICENSE.txt": "/static/js/2.681a0ef5.chunk.js.LICENSE.txt",
+    "static/js/2.977e70ff.chunk.js.LICENSE.txt": "/static/js/2.977e70ff.chunk.js.LICENSE.txt",
     "static/media/0.jpg": "/static/media/0.d415ab6a.jpg",
     "static/media/1.jpg": "/static/media/1.b83f5d94.jpg",
     "static/media/2.jpg": "/static/media/2.301b25f0.jpg",
     "static/media/3.jpg": "/static/media/3.ef2ce9a8.jpg",
     "static/media/4.jpg": "/static/media/4.08549fcc.jpg",
+    "static/media/5.jpg": "/static/media/5.5027943c.jpg",
+    "static/media/6.jpg": "/static/media/6.9f0993c5.jpg",
+    "static/media/7.jpg": "/static/media/7.ab5d32af.jpg",
     "static/media/changemakers_logo.png": "/static/media/changemakers_logo.80e43770.png",
     "static/media/changemakers_logo_white.png": "/static/media/changemakers_logo_white.9da54477.png",
     "static/media/flower_sale.jpg": "/static/media/flower_sale.8a85bf03.jpg",
@@ -31,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4584af55.js",
-    "static/js/2.681a0ef5.chunk.js",
+    "static/js/2.977e70ff.chunk.js",
     "static/css/main.24db7eaf.chunk.css",
-    "static/js/main.499a26e2.chunk.js"
+    "static/js/main.b9a40253.chunk.js"
   ]
 }
