@@ -26,6 +26,15 @@ function generateOrderLink (cart) {
   if (cart[4] > 0) {
     mail += `${cart[4]} Happy Holidays Wreath Card${cart[4] > 1 ? 's' : ''}%0d%0a`;
   }
+  if (cart[5] > 0) {
+    mail += `${cart[4]} Happy Holidays Snowman Card${cart[5] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[6] > 0) {
+    mail += `${cart[4]} Happy Hanukkah Wreath Card${cart[6] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[7] > 0) {
+    mail += `${cart[4]} Happy Merry and Bright Card${cart[7] > 1 ? 's' : ''}%0d%0a`;
+  }
   mail += `Total: $${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4]) * 5}%0d%0a`;
   mail += `%0d%0aThank you!`;
 
@@ -37,7 +46,7 @@ export default function Home () {
 
   const [ rerender, forceRerender ] = useState(0);
 
-  const [ cart, setCart ] = useState([0, 0, 0, 0, 0]);
+  const [ cart, setCart ] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
   const [ mobileCartOpen, setMobileCartOpen ] = useState(false);
 
