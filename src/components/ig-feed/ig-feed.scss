@@ -68,6 +68,10 @@
 }
 
 @media (max-width: 644px) {
+  .wgs-ig-post-info p {
+    height: unset !important;
+    padding-bottom: 1rem !important;
+  }
   .wgs-section-horizontal-row:not(.wrap) {
     display: grid;
     grid-template-columns: repeat(100, 100%);

@@ -74,7 +74,7 @@ export default function Home () {
                   <img className="wgs-ig-post-image" src={card.image} alt="Card" />
                   <div className="wgs-ig-post-info">
                     <h1>{card.title}</h1>
-                    <p>Add to cart →</p>
+                    <p>Tap to add to cart →</p>
                   </div>
                 </a>
               )
