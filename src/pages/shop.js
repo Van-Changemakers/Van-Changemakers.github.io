@@ -9,6 +9,30 @@ import ChangemakersLogo from '../assets/changemakers_logo.png';
 
 import Cards from '../assets/cards';
 
+function generateOrderLink (cart) {
+  let mail = 'Hello! This email was generated from the changemakers website. It contains my order for holidary cards.%0d%0a%0d%0aI would like:%0d%0a';
+  if (cart[0] > 0) {
+    mail += `${cart[0]} Happy Holidays Tree Card${cart[0] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[1] > 0) {
+    mail += `${cart[1]} Season's Greetings Card${cart[1] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[2] > 0) {
+    mail += `${cart[2]} Happy Holidays Village Card${cart[2] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[3] > 0) {
+    mail += `${cart[3]} Merry Christmas Card${cart[3] > 1 ? 's' : ''}%0d%0a`;
+  }
+  if (cart[4] > 0) {
+    mail += `${cart[4]} Happy Holidays Wreath Card${cart[4] > 1 ? 's' : ''}%0d%0a`;
+  }
+  mail += `Total: $${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4]) * 5}%0d%0a`;
+  mail += `%0d%0aThank you!`;
+
+  return `mailto:katie663399@gmail.com?subject=Holiday Card Order&body=${mail}`;
+
+}
+
 export default function Home () {
 
   const [ rerender, forceRerender ] = useState(0);
@@ -77,7 +101,7 @@ export default function Home () {
             <div style={{display: 'block', height: '140px'}}></div>
             <div className="send-button">
               <p className="total">Total: ${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4]) * 5}</p>
-              <Button>Send Email</Button>
+              <a href={generateOrderLink(cart)}><Button>Send Email</Button></a>
             </div>
           </div>
         </div>
