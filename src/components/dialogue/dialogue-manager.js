@@ -61,6 +61,11 @@ export default function DialogueManager ({ data }) {
         })}
       </div>
       <div className="wgs-dialogue-fab-bar">
+
+        <Link to="/"><button className="wgs-fab wgs-fab-small wgs-dialogue-closebutton"><span className="wgs-fab-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </span><mwc-ripple></mwc-ripple></button></Link>
+
         <button className="wgs-fab wgs-fab-small" onClick={() => {
           document.querySelector('.dm-scroll-container').scrollTo({
             top: 0,
@@ -70,10 +75,18 @@ export default function DialogueManager ({ data }) {
         }}><span className="wgs-fab-inner">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
         </span><mwc-ripple></mwc-ripple></button>
-        <Link to="/"><button className="wgs-fab wgs-fab-big"><span className="wgs-fab-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="48px" height="48px"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-          <span className="wgs-fab-text">Close</span>
-        </span><mwc-ripple primary></mwc-ripple></button></Link>
+
+        <button className="wgs-fab wgs-fab-big" onClick={() => {
+          document.querySelector(`.wgs-dialogue[data-index="${index}"]`).scrollTo({
+            top: window.innerHeight - 176,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }}><span className="wgs-fab-inner">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48px" height="48px"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+          <span className="wgs-fab-text">Open</span>
+        </span><mwc-ripple primary></mwc-ripple></button>
+
         <button className="wgs-fab wgs-fab-small" onClick={() => {
           document.querySelector('.dm-scroll-container').scrollTo({
             top: 0,

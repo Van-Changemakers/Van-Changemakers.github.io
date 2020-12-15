@@ -3,13 +3,30 @@ import './dialogue.scss';
 
 import Button from '../elements/button/button';
 
+function handleVerticalScroll (event) {
+  const dialogue = event.target;
+  const title = event.target.querySelector('.wgs-dialogue-title');
+  const main = event.target.querySelector('.wgs-dialogue-main');
+  if (dialogue.scrollTop < (window.innerHeight - 176)) {
+    const percentage = dialogue.scrollTop / (window.innerHeight - 176);
+    title.style.transform = `translateY(${116 * percentage}px) scale(${1 / (1 + percentage)})`;
+    main.style.overflowY = 'hidden';
+  } else {
+    title.style.transform = `translateY(116px) scale(0.5)`;
+    main.style.overflowY = 'auto';
+  }
+}
+
 export default function Dialogue ({data, index}) {
 
   useEffect(() => {
     document.body.style.overflowY = 'hidden';
 
+    document.querySelector(`.wgs-dialogue[data-index="${index}"]`).addEventListener('scroll', handleVerticalScroll);
+
     return () => {
       document.body.style.overflowY = 'unset';
+      document.querySelector(`.wgs-dialogue[data-index="${index}"]`).removeEventListener('scroll', handleVerticalScroll);
     }
   })
 

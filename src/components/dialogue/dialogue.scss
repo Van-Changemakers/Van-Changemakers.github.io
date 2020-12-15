@@ -128,9 +128,10 @@
       height: initial;
     }
     .wgs-dialogue-header {
-      height: 386px;
+      height: 100vh;
     }
     .wgs-dialogue-icon {
+      display: none;
       width: 96px;
       height: 96px;
       top: 338px;
@@ -138,6 +139,10 @@
     }
     .wgs-dialogue-fab-bg {
       display: none;
+    }
+
+    .wgs-dialogue-main {
+      height: calc(100vh - 176px);
     }
   }
   .wgs-dialogue-titlebox {
@@ -147,7 +152,8 @@
       font-size: 16.5vw;
       margin: 0;
       padding: 1rem;
-      padding-bottom: 48px;
+      //padding-bottom: 48px;
+      padding-bottom: 128px;
       font-weight: 700;
     }
   }
