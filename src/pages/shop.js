@@ -34,7 +34,7 @@ function generateOrderLink (cart) {
   if (cart[7] > 0) {
     mail += `${cart[4]} Happy Merry and Bright Card${cart[7] > 1 ? 's' : ''}%0d%0a`;
   }
-  mail += `Total: $${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4]) * 5}%0d%0a`;
+  mail += `Total: $${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4] + cart[5] + cart[6] + cart[7]) * 5}%0d%0a`;
   mail += `%0d%0aThank you!`;
 
   return `mailto:katie663399@gmail.com?subject=Holiday Card Order&body=${mail}`;
@@ -108,7 +108,7 @@ export default function Home () {
             })}
             <div style={{display: 'block', height: '140px'}}></div>
             <div className="send-button">
-              <p className="total">Total: ${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4]) * 5}</p>
+              <p className="total">Total: ${(cart[0] + cart[1] + cart[2] + cart[3] + cart[4] + cart[5] + cart[6] + cart[7]) * 5}</p>
               <a href={generateOrderLink(cart)}><Button>Send Email</Button></a>
             </div>
           </div>
