@@ -17,8 +17,8 @@
 
 .wgs-header-calendar-label {
   position: absolute;
-  left: 6rem;
-  bottom: 3rem;
+  left: 2rem;
+  bottom: 9rem;
   font-weight: 700;
   @media (max-width: 644px) {
     left: unset;
@@ -64,4 +64,10 @@
   @media (max-width: 644px) {
     display: none;
   }
+}
+
+.wgs-header-highlights {
+  position: absolute !important;
+  bottom: -4rem;
+  left: 0 !important;
 }

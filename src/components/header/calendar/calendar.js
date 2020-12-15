@@ -1,11 +1,38 @@
 import React from 'react';
 import './calendar.scss';
 
+import CardSale from '../../../assets/cards/0.jpg';
+import SocialMedia from '../../../assets/feed/sustainability_2020_06_27.jpg';
+import FlowerSale from '../../../assets/feed/flower_sale.jpg';
+
 export default function Calendar () {
   return (
     <>
-      <p class="wgs-header-calendar-label">UPCOMING FUNDRAISER</p>
-      <div class="wgs-header-calendar">
+      <p class="wgs-header-calendar-label">LATEST HIGHLIGHTS</p>
+      <div className="wgs-section-horizontal-row small wgs-header-highlights">
+          <a className="wgs-ig-post" key="Instagram" tabIndex="0" href="#a" rel="noreferrer noopener">
+            <img className="wgs-ig-post-image" src={CardSale} alt="" />
+            <div className="wgs-ig-post-info">
+              <h1>Holiday Sale</h1>
+              <p>Fundraiser for the lookout society over the holidays</p>
+            </div>
+          </a>
+          <a className="wgs-ig-post" key="YouTube" tabIndex="0" href="#a" rel="noreferrer noopener">
+            <img className="wgs-ig-post-image" src={SocialMedia} alt="" />
+            <div className="wgs-ig-post-info">
+              <h1>Digital Change</h1>
+              <p>Social media efforts to continue changing the world during a pandemic</p>
+            </div>
+          </a>
+          <a className="wgs-ig-post" key="YouTube" tabIndex="0" href="#a" rel="noreferrer noopener">
+            <img className="wgs-ig-post-image" src={FlowerSale} alt="" />
+            <div className="wgs-ig-post-info">
+              <h1>Flower Sale</h1>
+              <p>Valentine's Day flower sale for covenant house</p>
+            </div>
+          </a>
+        </div>
+      {/*<div class="wgs-header-calendar">
         <div class="wgs-header-calendar-date">
           <h1>12</h1>
           <h3>December</h3>
@@ -14,7 +41,7 @@ export default function Calendar () {
         <div class="wgs-header-calendar-location">
 
         </div>
-      </div>
+      </div>*/}
     </>
   )
 }
