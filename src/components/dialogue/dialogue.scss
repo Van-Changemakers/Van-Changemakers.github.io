@@ -108,6 +108,7 @@
     padding: 1rem;
     padding-left: 10rem;
     font-weight: 700;
+    box-sizing: border-box;
   }
 }
 
@@ -178,5 +179,6 @@
     width: 50% !important;
     margin: auto !important;
     text-align: center;
+    max-width:  476px;
   }
 }
