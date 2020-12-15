@@ -7,12 +7,14 @@ function handleVerticalScroll (event) {
   const dialogue = event.target;
   const title = event.target.querySelector('.wgs-dialogue-title');
   const main = event.target.querySelector('.wgs-dialogue-main');
+
   if (dialogue.scrollTop < (window.innerHeight - 176)) {
     const percentage = dialogue.scrollTop / (window.innerHeight - 176);
-    title.style.transform = `translateY(${116 * percentage}px) scale(${1 / (1 + percentage)})`;
+
+    title.style.transform = `translateY(${116 * percentage}px) scale(${1 / (1 + (percentage))})`;
     main.style.overflowY = 'hidden';
   } else {
-    title.style.transform = `translateY(116px) scale(0.5)`;
+    title.style.transform = `translateY(${116}px) scale(0.5)`;
     main.style.overflowY = 'auto';
   }
 }

@@ -121,7 +121,7 @@
   z-index: 1;
 }
 
-@media (max-width: 820px) {
+//@media (max-width: 820px) {
   .wgs-dialogue {
     .wgs-dialogue-content {
       display: block;
@@ -149,7 +149,6 @@
   
     .wgs-dialogue-title {
       color: white;
-      font-size: 16.5vw;
       margin: 0;
       padding: 1rem;
       //padding-bottom: 48px;
@@ -166,5 +165,18 @@
       width: 100%;
       display: block;
     }
+  }
+//}
+
+@media (max-width: 820px) {
+  .wgs-dialogue-title {
+    font-size: 16.5vw;
+  }
+}
+@media (min-width: 821px) {
+  .wgs-dialogue-title {
+    width: 50% !important;
+    margin: auto !important;
+    text-align: center;
   }
 }
