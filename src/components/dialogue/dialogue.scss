@@ -72,24 +72,31 @@
     position: relative;
 
     padding: 2rem;
-    padding-top: 4rem;
+    padding-top: 0;
     width: 100%;
 
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
 
-    overflow: auto;
-  }
-
-  @supports (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px)) {
-    .wgs-dialogue-main {
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(8px) brightness(150%);
+    .wgs-dialogue-main-content {
+      transform: translateY(-64px);
+      overflow: auto;
+      height: calc(100vh - 176px);
     }
   }
 
   .wgs-dialogue-bio {
     font-size: 1.25rem;
     text-align: justify;
+    max-width: 512px;
+    margin: auto;
+    margin-bottom: 32px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
     margin-bottom: 128px;
   }
 }

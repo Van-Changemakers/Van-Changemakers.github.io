@@ -6,16 +6,18 @@ import Button from '../elements/button/button';
 function handleVerticalScroll (event) {
   const dialogue = event.target;
   const title = event.target.querySelector('.wgs-dialogue-title');
-  const main = event.target.querySelector('.wgs-dialogue-main');
+  const content = event.target.querySelector('.wgs-dialogue-main-content');
 
   if (dialogue.scrollTop < (window.innerHeight - 176)) {
     const percentage = dialogue.scrollTop / (window.innerHeight - 176);
 
     title.style.transform = `translateY(${116 * percentage}px) scale(${1 / (1 + (percentage))})`;
-    main.style.overflowY = 'hidden';
+    content.style.overflowY = 'hidden';
+    content.style.transform = `translateY(${-64 + (64 * percentage)}px)`;
   } else {
     title.style.transform = `translateY(${116}px) scale(0.5)`;
-    main.style.overflowY = 'auto';
+    content.style.overflowY = 'auto';
+    content.style.transform = `translateY(0px)`;
   }
 }
 
@@ -42,8 +44,10 @@ export default function Dialogue ({data, index}) {
           </div>
         </div>
         <main className="wgs-dialogue-main">
-          <a href={url} target="_blank" rel="noreferrer noopener"><Button>Visit Website</Button></a>
-          <p className="wgs-dialogue-bio">{bio}</p>
+          <div class="wgs-dialogue-main-content">
+            <p className="wgs-dialogue-bio">{bio}</p>
+            <a href={url} target="_blank" rel="noreferrer noopener"><Button>Visit Website</Button></a>
+          </div>
         </main>
       </div>
       <div className="wgs-dialogue-icon">
