@@ -2,8 +2,6 @@ import React from 'react';
 import './wesite.scss';
 import '../index.css';
 
-import '@material/mwc-ripple';
-
 import 'focus-visible';
 
 import ChangemakersLogoWhite from '../assets/changemakers_logo_white.png';
