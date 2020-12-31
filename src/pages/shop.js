@@ -8,6 +8,9 @@ import Button from '../components/elements/button/button';
 
 import Cards from '../assets/cards';
 
+// decides whether to show or hide the products, based on whether any sale is currently active
+const open = false;
+
 function generateOrderLink (cart) {
   let mail = 'Hello! This email was generated from the changemakers website. It contains my order for holidary cards.%0d%0a%0d%0aI would like:%0d%0a';
   if (cart[0] > 0) {
@@ -49,7 +52,7 @@ export default function Home () {
 
   const [ mobileCartOpen, setMobileCartOpen ] = useState(false);
 
-  return (
+  return open ? (
     <>
       <Header image={Cards[0].image} title="Holiday Shop" subtitle="CHANGEMAKERS" showCalendar={false}></Header>
       <main className="wgs-main shop" style={{'padding-top': '64px', 'min-height': '100vh'}}>
@@ -115,6 +118,13 @@ export default function Home () {
         </div>
       </main>
       <Footer />
+    </>
+  ) : (
+    <>
+      <main className="wgs-main shop" style={{'position': 'absolute', 'top': '0', 'left': '0', 'width': '100%', 'height': '100%', 'display': 'flex', 'flex-direction': 'column', 'align-items': 'center', 'justify-content': 'center'}}>
+        <h1>No sale is currently active.</h1>
+        <h2>Check back soon!</h2>
+      </main>
     </>
   );
 }
