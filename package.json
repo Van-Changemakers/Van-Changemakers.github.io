@@ -5,23 +5,18 @@
   "homepage": "https://We-Changemakers.github.io/",
   "dependencies": {
     "@material/mwc-ripple": "^0.17.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "focus-visible": "^5.1.0",
     "gatsby": "^2.29.3",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-error-overlay": "^6.0.8"
   },
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
-    "test": "react-scripts test",
-    "deploy": "gh-pages -d public -b master",
-    "eject": "react-scripts eject"
+    "test": "node scripts/test.js",
+    "deploy": "gh-pages -d public -b master"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,7 +34,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
     "gatsby-plugin-sass": "^2.8.0",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "webpack": "^5.11.1"
   }
 }

@@ -30,7 +30,7 @@ export default function Dialogue ({data, index}) {
 
     return () => {
       document.body.style.overflowY = 'unset';
-      document.querySelector(`.wgs-dialogue[data-index="${index}"]`).removeEventListener('scroll', handleVerticalScroll);
+      document.querySelector(`.wgs-dialogue[data-index="${index}"]`)?.removeEventListener('scroll', handleVerticalScroll);
     }
   })
 
