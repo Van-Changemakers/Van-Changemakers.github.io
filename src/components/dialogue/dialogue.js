@@ -46,7 +46,7 @@ export default function Dialogue ({data, index}) {
         <main className="wgs-dialogue-main">
           <div class="wgs-dialogue-main-content">
             <p className="wgs-dialogue-bio">{bio}</p>
-            <a href={url} target="_blank" rel="noreferrer noopener"><Button>Visit Website</Button></a>
+            {url ? <a href={url} target="_blank" rel="noreferrer noopener"><Button>Visit Website</Button></a> : <></>}
           </div>
         </main>
       </div>

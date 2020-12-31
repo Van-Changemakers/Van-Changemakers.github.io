@@ -7,7 +7,7 @@ import { useParams, useHistory, Link } from 'react-router-dom';
 
 import Skyline from '../../assets/skyline.jpg';
 
-export default function DialogueManager ({ data }) {
+export default function DialogueManager ({ data, urlRoot }) {
 
   let { index } = useParams();
   index = Number(index);
@@ -48,7 +48,7 @@ export default function DialogueManager ({ data }) {
         console.log('index is set to ', index);
         console.log('scroll position is ', scrollView.scrollLeft);
         console.log('\n\n\n');
-        history.push(`/organizations/${newIndex}`);
+        history.push(`/${urlRoot}/${newIndex}`);
       }
     }
   }

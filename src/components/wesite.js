@@ -12,6 +12,7 @@ import DialogueManager from './dialogue/dialogue-manager';
 import ChangemakersLogoWhite from '../assets/changemakers_logo_white.png';
 
 import Resources from '../assets/resources';
+import Highlights from '../assets/articles/highlights';
 
 import { Link } from 'react-router-dom';
 
@@ -35,7 +36,10 @@ export default function WeSite () {
             <Holiday></Holiday>
           </Route>
           <Route path="/organizations/:index">
-            <DialogueManager data={Resources} />
+            <DialogueManager data={Resources} urlRoot="organizations" />
+          </Route>
+          <Route path="/highlights/:index">
+            <DialogueManager data={Highlights} urlRoot="highlights" />
           </Route>
           <Route path="*">
             <Error404 />
