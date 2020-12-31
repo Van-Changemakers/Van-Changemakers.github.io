@@ -131,6 +131,14 @@
 .wgs-dialogue-fab-bar .wgs-dialogue-closebutton {
   position: fixed;
   top: 0;
+  left: 0;
+  margin: 0.25rem;
+  z-index: 3;
+}
+
+.wgs-dialogue-fab-bar .wgs-dialogue-sharebutton {
+  position: fixed;
+  top: 0;
   right: 0;
   margin: 0.25rem;
   z-index: 3;
