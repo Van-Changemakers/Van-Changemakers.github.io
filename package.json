@@ -20,7 +20,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "test": "react-scripts test",
-    "deploy": "gh-pages -d build -b master",
+    "deploy": "gh-pages -d public -b master",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
