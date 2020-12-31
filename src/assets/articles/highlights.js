@@ -5,7 +5,7 @@ import FlowerSaleHeader from '../feed/flower_sale.jpg';
 
 const highlights = [
   {
-    "title": "Holiday Card Fundraiser",
+    "title": "Holiday Sale",
     "tagline": "E-Commerce fundraiser for the lookout society over the holidays",
     "icon": CardHeader,
     "bio": "The ongoing COVID-19 pandemic has made fundraising incredibly challenging. Despite that, we were able to move to an E-Commerce model to raise money for the Lookout Society with cards designed by various group members with various holiday-related phrases (Happy Holidays, Merry Christmas, Season's Greetings, Happy Happy Hanukkah, etc). We promoted this effort through our social media pages and emails to friends and family. Cards could be requested through Instagram DM, by email, or from the new shop page on our website. Once the request has been recieved, delivery location and money e-transfer was organized. In the end, we managed to raise $205 with this fundraiser, and build valuable skills, knowledge, and infrastructure for future online fundraisers we plan to do for much of 2021.",
