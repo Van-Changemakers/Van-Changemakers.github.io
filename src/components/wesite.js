@@ -21,8 +21,8 @@ export default function WeSite ({ children }) {
           name="description"
           content="Vancouver Changemakers Site"
         />
-        
       </Helmet>
+      
       <div className="wgs-header-links">
         <Link to="/"><img className="wgs-home-link" src={ChangemakersLogoWhite} alt="Changemakers Logo" /></Link>
         <Link className="textlink" to="/shop">Shop</Link>
