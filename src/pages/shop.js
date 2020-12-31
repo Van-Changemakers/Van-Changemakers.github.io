@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './shop.scss';
 
+import WeSite from '../components/wesite.js';
+
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
@@ -54,6 +56,7 @@ export default function Home () {
 
   return open ? (
     <>
+      <WeSite />
       <Header image={Cards[0].image} title="Holiday Shop" subtitle="CHANGEMAKERS" showCalendar={false}></Header>
       <main className="wgs-main shop" style={{'padding-top': '64px', 'min-height': '100vh'}}>
         <h1 className="wgs-section-title" style={{'text-align': 'center'}}>Holiday Cards</h1>
@@ -121,6 +124,7 @@ export default function Home () {
     </>
   ) : (
     <>
+      <WeSite />
       <main className="wgs-main shop" style={{'position': 'absolute', 'top': '0', 'left': '0', 'width': '100%', 'height': '100%', 'display': 'flex', 'flex-direction': 'column', 'align-items': 'center', 'justify-content': 'center'}}>
         <h1>No sale is currently active.</h1>
         <h2>Check back soon!</h2>

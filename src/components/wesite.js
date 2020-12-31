@@ -1,5 +1,6 @@
 import React from 'react';
 import './wesite.scss';
+import '../index.css';
 
 import '@material/mwc-ripple';
 

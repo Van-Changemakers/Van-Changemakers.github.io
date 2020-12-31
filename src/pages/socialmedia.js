@@ -1,5 +1,7 @@
 import React from 'react';
 
+import WeSite from '../components/wesite.js';
+
 import IgFeed from '../components/ig-feed/ig-feed';
 
 import InstagramLogo from '../assets/icons/instagram.jpeg';
@@ -8,6 +10,7 @@ import YoutubeLogo from '../assets/icons/youtube.png'
 export default function SocialMedia () {
   return (
     <>
+      <WeSite />
       <main className="wgs-main" style={{'padding-top': '64px'}}>
         <h1 className="wgs-section-title">Accounts</h1>
         <div className="wgs-section-horizontal-row small">

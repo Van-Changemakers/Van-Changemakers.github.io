@@ -1,4 +1,7 @@
 import React from 'react';
+
+import WeSite from '../../wesite.js';
+
 import DialogueManager from '../dialogue-manager.js';
 
 import '../../wesite.scss';
@@ -9,6 +12,6 @@ export default function HighlightsDialogue ({ pageContext }) {
 
   const { index } = pageContext;
 
-  return <DialogueManager data={Resources} index={index} urlRoot="organizations" />
+  return <WeSite><DialogueManager data={Resources} index={index} urlRoot="organizations" /></WeSite>
 }
 
