@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.scss';
 import Logo from '../../assets/changemakers_logo.png';
 
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 export default function Footer () {
   return (

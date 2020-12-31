@@ -1,7 +1,7 @@
 import React from 'react';
 import './section.scss';
 
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 export default function Section ({title, tiles}) {
 

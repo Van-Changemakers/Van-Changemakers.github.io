@@ -3,16 +3,13 @@ import Dialogue from './dialogue';
 
 import './dialogue-manager.scss';
 
-import { useParams, useHistory, Link } from 'react-router-dom';
+import { Link, navigate } from 'gatsby';
 
 import Skyline from '../../assets/skyline.jpg';
 
-export default function DialogueManager ({ data, urlRoot }) {
+export default function DialogueManager ({ data, urlRoot, index }) {
 
-  let { index } = useParams();
   index = Number(index);
-
-  const history = useHistory();
 
   /*const isFirstEntry = index === 0;
   const isLastEntry = index + 1 === data.length;*/
@@ -48,7 +45,7 @@ export default function DialogueManager ({ data, urlRoot }) {
         console.log('index is set to ', index);
         console.log('scroll position is ', scrollView.scrollLeft);
         console.log('\n\n\n');
-        history.push(`/${urlRoot}/${newIndex}`);
+        navigate(`/${urlRoot}/${newIndex}`);
       }
     }
   }

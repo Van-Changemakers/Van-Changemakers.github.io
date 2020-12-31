@@ -1,7 +1,7 @@
 import React from 'react';
 import './calendar.scss';
 
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 import Highlights from '../../../assets/articles/highlights.js';
 

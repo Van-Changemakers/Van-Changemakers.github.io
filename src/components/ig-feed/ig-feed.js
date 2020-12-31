@@ -3,7 +3,7 @@ import './ig-feed.scss';
 
 import feed from '../../assets/feed';
 
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 export default function IgFeed ({wrap = false}) {
 
