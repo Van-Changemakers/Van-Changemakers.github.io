@@ -82,6 +82,9 @@
       transform: translateY(-64px);
       overflow: auto;
       height: calc(100vh - 176px);
+      :last-child {
+        margin-bottom: 128px;
+      }
     }
   }
 
@@ -97,7 +100,6 @@
     justify-content: center;
     position: relative;
     margin: auto;
-    margin-bottom: 128px;
   }
 }
 
