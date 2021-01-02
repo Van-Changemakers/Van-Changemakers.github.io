@@ -19,6 +19,11 @@
   }
   @media (max-width: 644px) {
     height: 386px;
+    &.calendar-visible {
+      .wgs-header-title-box {
+        margin-bottom: 5rem;
+      }
+    }
   }
 }
 
@@ -45,6 +50,5 @@
   }
   @media (max-width: 644px) {
     flex-direction: column;
-    margin-bottom: 5rem;
   }
 }
