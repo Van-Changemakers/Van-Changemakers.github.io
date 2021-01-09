@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './shop.scss';
 
+import { navigate } from 'gatsby';
+
 import WeSite from '../components/wesite.js';
 
 import Header from '../components/header/header';
@@ -46,11 +48,19 @@ function generateOrderLink (cart) {
 
 }
 
-export default function Home () {
+export default function Shop ({ location }) {
 
   const [ rerender, forceRerender ] = useState(0);
 
-  const [ cart, setCart ] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  // create to manage url search params
+  const searchParams = new URLSearchParams(location.search);
+
+  // use url cart if it exists, otherwise use an empty one
+  const [ cart, setCart ] = useState(searchParams.has('cart') ? JSON.parse(searchParams.get('cart')) : [0, 0, 0, 0, 0, 0, 0, 0]);
+
+  // set search params to current cart
+  searchParams.set('cart', JSON.stringify(cart));
+  '?' + searchParams.toString();
 
   const [ mobileCartOpen, setMobileCartOpen ] = useState(false);
 
@@ -73,6 +83,12 @@ export default function Home () {
                   newCart[index]++;
                   console.log(newCart);
                   setCart(newCart);
+
+                  // set url search params
+                  searchParams.set('cart',JSON.stringify(newCart));
+                  window.history.pushState({}, 'Changemakers Shop', './?' + searchParams.toString());
+
+                  // cause rerender
                   forceRerender(rerender + 1);
                 }}>
                   <img className="wgs-ig-post-image" src={card.image} alt="Card" />
@@ -104,7 +120,10 @@ export default function Home () {
                       event.target.parentElement.parentElement.classList.add('exit');
                       setTimeout(() => {
                         forceRerender(rerender + 1);
-                      }, 400);
+                      }, 400)
+                      // set url search params
+                      searchParams.set('cart',JSON.stringify(newCart));
+                      window.history.pushState({}, 'Changemakers Shop', './?' + searchParams.toString());
                     }}><span className="wgs-fab-inner">
                       -
                     </span><mwc-ripple></mwc-ripple></button>
