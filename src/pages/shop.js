@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './shop.scss';
 
-import { navigate } from 'gatsby';
-
 import WeSite from '../components/wesite.js';
 
 import Header from '../components/header/header';
@@ -13,7 +11,9 @@ import Button from '../components/elements/button/button';
 import Cards from '../assets/cards';
 
 // decides whether to show or hide the products, based on whether any sale is currently active
-const open = false;
+const open = true;
+
+const sessionStorage = window?.sessionStorage || { getItem() { return false } };
 
 function generateOrderLink (cart) {
   let mail = 'Hello! This email was generated from the changemakers website. It contains my order for holidary cards.%0d%0a%0d%0aI would like:%0d%0a';
@@ -56,11 +56,7 @@ export default function Shop ({ location }) {
   const searchParams = new URLSearchParams(location.search);
 
   // use url cart if it exists, otherwise use an empty one
-  const [ cart, setCart ] = useState(searchParams.has('cart') ? JSON.parse(searchParams.get('cart')) : [0, 0, 0, 0, 0, 0, 0, 0]);
-
-  // set search params to current cart
-  searchParams.set('cart', JSON.stringify(cart));
-  '?' + searchParams.toString();
+  const [ cart, setCart ] = useState(JSON.parse(sessionStorage?.getItem('cart')) || [0, 0, 0, 0, 0, 0, 0, 0]);
 
   const [ mobileCartOpen, setMobileCartOpen ] = useState(false);
 
@@ -84,11 +80,11 @@ export default function Shop ({ location }) {
                   console.log(newCart);
                   setCart(newCart);
 
-                  // set url search params
-                  searchParams.set('cart',JSON.stringify(newCart));
-                  window.history.pushState({}, 'Changemakers Shop', './?' + searchParams.toString());
+                  // update storage
+                  sessionStorage.setItem('cart', JSON.stringify(newCart));
 
-                  // cause rerender
+                  // rerender
+                  setCart(newCart);
                   forceRerender(rerender + 1);
                 }}>
                   <img className="wgs-ig-post-image" src={card.image} alt="Card" />
@@ -118,12 +114,11 @@ export default function Shop ({ location }) {
                       console.log(newCart);
                       setCart(newCart);
                       event.target.parentElement.parentElement.classList.add('exit');
+                      // update storage
+                      sessionStorage.setItem('cart', JSON.stringify(newCart));
                       setTimeout(() => {
                         forceRerender(rerender + 1);
-                      }, 400)
-                      // set url search params
-                      searchParams.set('cart',JSON.stringify(newCart));
-                      window.history.pushState({}, 'Changemakers Shop', './?' + searchParams.toString());
+                      }, 400);
                     }}><span className="wgs-fab-inner">
                       -
                     </span><mwc-ripple></mwc-ripple></button>
