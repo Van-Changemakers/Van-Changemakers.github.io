@@ -11,7 +11,7 @@ import Button from '../components/elements/button/button';
 import Cards from '../assets/cards';
 
 // decides whether to show or hide the products, based on whether any sale is currently active
-const open = true;
+const open = false;
 
 const sessionStorage = window?.sessionStorage || { getItem() { return false } };
 
