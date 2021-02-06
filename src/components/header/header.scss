@@ -12,7 +12,11 @@
   margin-bottom: 4rem;
   background-size: cover, cover;
   z-index: 1;
+  h1 {
+    --delay: 0.5s;
+  }
   h3 {
+    --delay: 1s;
     font-size: 1.75rem;
     margin: 0;
     font-style: italic;

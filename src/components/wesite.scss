@@ -7,6 +7,7 @@
   //justify-content: center;
   background: linear-gradient(90deg, rgba(24, 174, 232, 1), rgba(19, 198, 163, 1));
   z-index: 2;
+
   .textlink {
     padding: 1rem;
     cursor: pointer;
@@ -17,6 +18,12 @@
 .wgs-home-link {
   height: 36px;
   padding: 8px;
+}
+
+.wgs-header-links-right {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @supports (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px)) {

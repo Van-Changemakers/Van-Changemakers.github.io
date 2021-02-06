@@ -34,3 +34,14 @@
     background: linear-gradient(90deg, rgb(24, 174, 232), rgb(19, 198, 163));
   }
 }
+
+.wgs-button:disabled {
+  background: #666;
+  transform:translateY(0);
+  box-shadow: none;
+
+  span {
+    color: #666;
+    background: white;
+  }
+}

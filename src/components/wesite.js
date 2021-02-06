@@ -7,9 +7,11 @@ import 'focus-visible';
 import ChangemakersLogoWhite from '../assets/changemakers_logo_white.png';
 
 import { Link } from 'gatsby';
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 
-export default function WeSite ({ children }) {
+import Cart from './cart/cart.js';
+
+export default function WeSite ({ noCart, children }) {
   return (
     <>
       <Helmet>
@@ -26,6 +28,10 @@ export default function WeSite ({ children }) {
         <Link to="/"><img className="wgs-home-link" src={ChangemakersLogoWhite} alt="Changemakers Logo" /></Link>
         <Link className="textlink" to="/shop">Shop</Link>
         <Link className="textlink" to="/socialmedia">Social Media</Link>
+        <Link className="textlink" to="/about">About Us</Link>
+        <div className="wgs-header-links-right">
+          {!noCart ? <Cart></Cart> : <></>}
+        </div>
       </div>
       { children }
     </>
