@@ -12,7 +12,7 @@ import Resources from '../assets/resources';
 export default function Home () {
   return (
     <>
-      <WeSite />
+      {/*<WeSite />*/}
       <Header />
       <main className="wgs-main">
         <IgFeed></IgFeed>

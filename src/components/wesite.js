@@ -24,7 +24,7 @@ export default function WeSite ({ noCart, children }) {
         />
       </Helmet>
       
-      <div className="wgs-header-links">
+      <div className="wgs-header-links animated-entry">
         <Link to="/"><img className="wgs-home-link" src={ChangemakersLogoWhite} alt="Changemakers Logo" /></Link>
         <Link className="textlink" to="/shop">Shop</Link>
         <Link className="textlink" to="/socialmedia">Social Media</Link>

@@ -12,7 +12,7 @@ export default function Calendar () {
       <div className="wgs-section-horizontal-row small wgs-header-highlights">
         {Highlights.map((highlight, index) => {
           return (<Link to={`/highlights/${index}`}>
-            <div className="wgs-ig-post wgs-header-highlight-card animated-entry" key={index} tabIndex="0"  style={{ '--delay': (index * 0.3 + 1.5) + 's' }}>
+            <div className="wgs-ig-post wgs-header-highlight-card animated-entry" key={index} tabIndex="0"  style={{ '--delay': (index * 0.3 + 2.5) + 's' }}>
               <img className="wgs-ig-post-image" src={highlight.icon} alt="" />
               <div className="wgs-ig-post-info">
                 <h1>{highlight.title}</h1>
