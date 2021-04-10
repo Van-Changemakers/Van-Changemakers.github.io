@@ -8,7 +8,7 @@ import Highlights from '../../../assets/articles/highlights.js';
 export default function Calendar () {
   return (
     <>
-      <p class="wgs-header-calendar-label">LATEST HIGHLIGHTS</p>
+      <p class="wgs-header-calendar-label animated-entry">LATEST HIGHLIGHTS</p>
       <div className="wgs-section-horizontal-row small wgs-header-highlights">
         {Highlights.map((highlight, index) => {
           return (<Link to={`/highlights/${index}`}>
