@@ -8,7 +8,13 @@ import Cards from '../../assets/cards';
 // decides whether to show or hide the products, based on whether any sale is currently active
 import open from '../../data/isCartOpen';
 
-let sessionStorage = sessionStorage || { getItem() { return false } };
+let sessionStorage;
+
+if (typeof process === 'object') {
+  sessionStorage = { getItem() { return false } };
+} else {
+  sessionStorage = window.sessionStorage;
+}
 
 function generateOrderLink (cart) {
   let mail = 'Hello! This email was generated from the changemakers website. It contains my order for holidary cards.%0d%0a%0d%0aI would like:%0d%0a';
